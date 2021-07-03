@@ -2,7 +2,7 @@
 ## Prerequisites
 - `youtube-dl` Library is a command-line program to download videos from YouTube.com and a few more sites. It requires the `Python interpreter, version 2.6, 2.7, or 3.2+`, and it is not platform specific.
 ## Step
-1. Clone this code 
+1. Clone this code.
         - `git clone https://github.com/afandimsr/YouTube-Mp3-Download-Using-youtube-dl.git`. 
 2. Make Virtual Environment you can see in  [Here](https://docs.python.org/3/tutorial/venv.html).
 3. Active your Virtual Environment 
