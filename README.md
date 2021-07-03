@@ -6,7 +6,7 @@
 ## Steps
 1. Clone this code.
 
-        - git clone https://github.com/afandimsr/YouTube-Mp3-Download-Using-youtube-dl.git. 
+        git clone https://github.com/afandimsr/YouTube-Mp3-Download-Using-youtube-dl.git 
 
 2. Make Virtual Environment you can see in  [Here](https://docs.python.org/3/tutorial/venv.html).
 3. Active your Virtual Environment 
@@ -17,7 +17,7 @@
     - On Unix or MacOS, run:
 
         `source your-name-virtual-environtment/bin/activate`
-        
+
 4. Install youtube_dl library 
 
         pip install youtube_dl
