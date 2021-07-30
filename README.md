@@ -2,7 +2,7 @@
 ## Description
 `youtube-dl` Library is a command-line program to download videos from YouTube.com and a few more sites.
 ## Prerequisites
--  It requires the `Python interpreter, version 2.6, 2.7, or 3.2+`, and it is not platform specific.
+-  It requires the `Python interpreter, version >= 3.5`, and it is not platform specific.
 ## Steps
 1. Clone this code.
 

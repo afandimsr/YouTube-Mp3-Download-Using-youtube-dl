@@ -1,11 +1,16 @@
 import youtube_dl
+from pathlib import Path
+import os
 
 
 def run():
     video_url = input("please enter youtube video url:")
+    # make download directory directory
+    Path.cwd().joinpath("download").mkdir(parents=True, exist_ok=True)
     video_info = youtube_dl.YoutubeDL().extract_info(
         url=video_url, download=False
     )
+    # print(video_info)
     filename = f"{video_info['title']}.mp3"
     options = {
         'format': 'bestaudio/best',
@@ -15,6 +20,12 @@ def run():
 
     with youtube_dl.YoutubeDL(options) as ydl:
         ydl.download([video_info['webpage_url']])
+
+        if(Path(filename).exists()):
+            Path(filename).resolve().replace(
+                str(Path().cwd().joinpath("download"))+"/"+filename)
+            # moving file using os
+            # os.replace(os.getcwd()+"\\"+filename, os.getcwd()+"\\download\\"+filename)
 
     print("Download complete... {}".format(filename))
 
